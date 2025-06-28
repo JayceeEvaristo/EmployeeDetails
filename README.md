@@ -1,3 +1,7 @@
+![image](https://github.com/user-attachments/assets/a1008f93-f486-4bea-b634-cc44330ed514)
+please install this packages on server
+
+
 1st make sure your start up is set in multiple by right clickin on the solution and click properties
 ![image](https://github.com/user-attachments/assets/b251f65a-bc87-4e11-b88b-df124639ee02)
 and click multiple and make sure that the 2 field is set the actions both to Start see the yellow circle 
