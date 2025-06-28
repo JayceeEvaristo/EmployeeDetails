@@ -13,7 +13,7 @@ open that and please edit the DefaultConnection to your own server's preference
 now go to tools(red circle) and hover nuget package mangaer and click package manager console(yellow circle)
 ![image](https://github.com/user-attachments/assets/5c8eeb31-e14f-4e4d-a832-10cf9f9bc01b)
 and run the code below to nuget console
-dotnet ef migrations add AddInsertPositionProcedure
+cd <server folder location>
+dotnet ef migrations add initial
 dotnet ef database update
 after that you can start the system please refresh in the 1st boot
-
