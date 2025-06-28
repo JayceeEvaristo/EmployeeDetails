@@ -1,0 +1,24 @@
+﻿* {
+    --secondary-button-hover: #4175CA;
+    --adminFont: "Poppins", sans-serif;
+    --sidebarHover: #509CDB;
+    --cancel-button: #FF3F3F;
+    --cancel-button-hover: #ff6f6f;
+    --text-color: #222831;
+    --primary-color: #00ADB5;
+    --primary-color-hover: #018187;
+    --form-background: #EEEEEE;
+}
+#root {
+    text-align: center;
+    background-color: #393E46;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+th, td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

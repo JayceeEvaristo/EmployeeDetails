@@ -1,0 +1,401 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    align-content: center;
+    overflow: hidden;
+}
+
+.header {
+/*    border: 2px solid black;*/
+    height: 10vh;
+    max-height: 100px;
+    display: flex;
+    align-content: center;
+    text-transform: uppercase;
+    padding-left: 10px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1 {
+    margin: 0;
+    font-family: var(--adminFont);
+    color: var(--form-background);
+    display: inline-block;
+    align-content: center;
+}
+
+.header button {
+    margin: 15px;
+    text-transform: uppercase;
+    font-family: var(--adminFont);
+    font-weight: 700;
+    background-color: var(--form-background);
+    border: none;
+    color: var(--primary-color);
+    transition: all 0.2s;
+}
+
+.header button:hover {
+    background-color: var(--text-color);
+    transition: all 0.2s;
+}
+
+.content{
+    width: 100%;
+    flex-grow: 1;
+/*    border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.formGroup {
+    background-color: var(--form-background);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    gap: 5px;
+}
+
+.formGroupHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black
+}
+
+.formGroupHeader h1 {
+    margin: 0;
+    font-family: var(--adminFont);
+    font-size: 5vh;
+    text-transform: uppercase;
+    color: var(--primary-color);
+
+}
+
+.closeModal button {
+    padding: 5px 10px;
+    border-radius: 100%;
+    background-color: var(--cancel-button);
+    transition: all 0.2s;
+    border: none
+}
+
+.closeModal button:hover {
+    background-color: var(--cancel-button-hover);
+    transition: all 0.2s;
+    border: none
+}
+
+.formGroup p {
+    margin: 0;
+    text-align: left;
+    font-family: var(--adminFont);
+    color: black;
+    font-size: 1.3rem;
+}
+
+.formGroup span{
+    color: red;
+}
+
+.formGroupContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formGroupContentInput {
+    display: flex;
+    gap: 10px;
+    background-color: var(--primary-color);
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+.formGroupContentInput div {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 5px;
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+.formGroupContentInput div label {
+    color: var(--form-background);
+}
+
+.formGroupContentInput div input {
+    flex-grow: 1;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    font-size: 2vh;
+    text-transform: capitalize;
+    font-family: var(--adminFont);
+    padding: 2px 5px;
+}
+
+.formGroupContentInput div select {
+    flex-grow: 1;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    font-size: 2vh;
+    font-family: var(--adminFont);
+    padding: 2px 5px;
+}
+
+.formGroupFooter {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.formGroupFooter button {
+    text-transform: uppercase;
+}
+
+.formGroupFooter div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.formGroupFooter div button:nth-child(1) {
+    background-color: rgba(211, 211, 211, 0.8);
+    border: none;
+    transition: all 0.2s;
+    color: black;
+}
+
+.formGroupFooter div button:nth-child(1):hover {
+    background-color: rgba(152, 152, 152, 0.8);
+    border: none;
+    transition: all 0.2s;
+}
+
+.formGroupFooter div button:nth-child(2) {
+    background-color: var(--primary-color);
+    border: none;
+    transition: all 0.2s;
+}
+
+.formGroupFooter div button:nth-child(2):hover {
+    background-color: var(--primary-color-hover);
+    border: none;
+    transition: all 0.2s;
+}
+
+
+.deleteButton {
+    background-color: var(--cancel-button);
+    transition: all 0.2s;
+    border: none;
+}
+
+.deleteButton:hover {
+    background-color: var(--cancel-button-hover);
+    transition: all 0.2s;
+    border: none;
+}
+
+.tableGroup {
+    background-color: var(--form-background);
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    gap: 5px;
+}
+
+.tableHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--adminFont);
+}
+
+.tableHeader h2{
+    margin: 0;
+    color: var(--text-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.tableHeader button {
+    background-color: var(--primary-color);
+    font-weight: 600;
+    border: 1px solid black;
+    transition: all 0.3s;
+}
+
+.tableHeader button:hover {
+    background-color: var(--primary-color-hover);
+    transition: all 0.3s;
+}
+
+.tableContainer {
+    overflow-y: auto;
+    width: 100%;
+}
+
+.tableContainer table {
+    /*    border: 2px solid var(--primary-color);*/
+    border-radius: 5px;
+    font-family: var(--adminFont);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableContainer table thead tr th {
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 2vh;
+    color: white;
+    border-collapse: collapse;
+    position: sticky;
+    top: 0px;
+}
+
+.tableContainer table tbody tr td {
+    text-transform: uppercase;
+    font-size: 2vh;
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-collapse: collapse;
+}
+
+.tableContainer table tbody tr:hover {
+    transition: all 0.2s;
+}
+
+.tableContainer table tbody tr:hover {
+    background-color: rgba(187, 187, 187, 0.3);
+    transition: all 0.2s;
+    cursor: pointer;
+} 
+
+.modalContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.31);
+    backdrop-filter: blur(5px);
+}
+
+.modalContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.updateButton{
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #0094ff;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.updateButton:hover {
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #006885;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.cancelButton {
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: var(--cancel-button);
+    border: none;
+    transition: 0.2s ease;
+}
+
+.cancelButton:hover {
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: var(--cancel-button-hover);
+    border: none;
+    transition: 0.2s ease;
+}
+
+.createButton {
+    margin: 5px 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    border: none;
+    transition: 0.2s ease;
+}
+
+.createButton:hover {
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: var(--primary-color-hover);
+    border: none;
+    transition: 0.2s ease;
+}
+
+.addPos{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    border: 1px solid var(--primary-color);
+}
+
+.addPos div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.addPos div label{
+    font-family: var(--adminFont);
+    color: var(--text-color)
+}
+
+.addPos div input {
+    background-color: var(--form-background);
+    color: var(--text-color);
+    font-size: large;
+    padding: 5px 3px;
+    border: 2px solid var(--primary-color);
+
+}
+
+
+
+
+
+
+
+
+
+
