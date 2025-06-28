@@ -10,6 +10,8 @@ Next is go to the EmployeeDetails.Server and find the appsettings.json
 ![image](https://github.com/user-attachments/assets/836832da-788e-4b4d-8f64-089469e91985)
 open that and please edit the DefaultConnection to your own server's preference 
 ![image](https://github.com/user-attachments/assets/e84fef89-e979-4467-acfe-96fc494d333c)
+after that go to the client folder and find vite.config.ts and open it and edit the target based on your own local host under server/proxy
+![image](https://github.com/user-attachments/assets/c1e9a876-7a6c-44e4-af4b-4aa10af935bf)
 now go to tools(red circle) and hover nuget package mangaer and click package manager console(yellow circle)
 ![image](https://github.com/user-attachments/assets/5c8eeb31-e14f-4e4d-a832-10cf9f9bc01b)
 and run the code below to nuget console
